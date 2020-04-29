@@ -1,0 +1,4 @@
+/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles/2.8.dir
+/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles/C___Primer.dir
