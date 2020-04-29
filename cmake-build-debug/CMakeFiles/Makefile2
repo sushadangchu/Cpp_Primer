@@ -53,8 +53,9 @@ CMAKE_BINARY_DIR = "/home/ldl/C++ Primer/cmake-build-debug"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/2.8.dir/all
 all: CMakeFiles/C___Primer.dir/all
+all: CMakeFiles/2.8.dir/all
+all: CMakeFiles/2.18.dir/all
 
 .PHONY : all
 
@@ -64,10 +65,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/2.8.dir/clean
 clean: CMakeFiles/C___Primer.dir/clean
+clean: CMakeFiles/2.8.dir/clean
+clean: CMakeFiles/2.18.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/C___Primer.dir
+
+# All Build rule for target.
+CMakeFiles/C___Primer.dir/all:
+	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/depend
+	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target C___Primer"
+.PHONY : CMakeFiles/C___Primer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/C___Primer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/C___Primer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/C___Primer.dir/rule
+
+# Convenience name for target.
+C___Primer: CMakeFiles/C___Primer.dir/rule
+
+.PHONY : C___Primer
+
+# clean rule for target.
+CMakeFiles/C___Primer.dir/clean:
+	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/clean
+.PHONY : CMakeFiles/C___Primer.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/2.8.dir
@@ -76,7 +105,7 @@ clean: CMakeFiles/C___Primer.dir/clean
 CMakeFiles/2.8.dir/all:
 	$(MAKE) -f CMakeFiles/2.8.dir/build.make CMakeFiles/2.8.dir/depend
 	$(MAKE) -f CMakeFiles/2.8.dir/build.make CMakeFiles/2.8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 2.8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target 2.8"
 .PHONY : CMakeFiles/2.8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -97,31 +126,31 @@ CMakeFiles/2.8.dir/clean:
 .PHONY : CMakeFiles/2.8.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/C___Primer.dir
+# Target rules for target CMakeFiles/2.18.dir
 
 # All Build rule for target.
-CMakeFiles/C___Primer.dir/all:
-	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/depend
-	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target C___Primer"
-.PHONY : CMakeFiles/C___Primer.dir/all
+CMakeFiles/2.18.dir/all:
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/depend
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 2.18"
+.PHONY : CMakeFiles/2.18.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/C___Primer.dir/rule: cmake_check_build_system
+CMakeFiles/2.18.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/C___Primer.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/2.18.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ldl/C++ Primer/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/C___Primer.dir/rule
+.PHONY : CMakeFiles/2.18.dir/rule
 
 # Convenience name for target.
-C___Primer: CMakeFiles/C___Primer.dir/rule
+2.18: CMakeFiles/2.18.dir/rule
 
-.PHONY : C___Primer
+.PHONY : 2.18
 
 # clean rule for target.
-CMakeFiles/C___Primer.dir/clean:
-	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/clean
-.PHONY : CMakeFiles/C___Primer.dir/clean
+CMakeFiles/2.18.dir/clean:
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/clean
+.PHONY : CMakeFiles/2.18.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

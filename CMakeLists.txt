@@ -5,3 +5,4 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(C___Primer main.cpp)
 add_executable(2.8 2/2.8.cpp)
+add_executable(2.18 2/2.18.cpp)

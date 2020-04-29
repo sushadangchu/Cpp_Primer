@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named C___Primer
+
+# Build rule for target.
+C___Primer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 C___Primer
+.PHONY : C___Primer
+
+# fast build rule for target.
+C___Primer/fast:
+	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/build
+.PHONY : C___Primer/fast
+
+#=============================================================================
 # Target rules for targets named 2.8
 
 # Build rule for target.
@@ -124,17 +137,44 @@ depend:
 .PHONY : 2.8/fast
 
 #=============================================================================
-# Target rules for targets named C___Primer
+# Target rules for targets named 2.18
 
 # Build rule for target.
-C___Primer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 C___Primer
-.PHONY : C___Primer
+2.18: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2.18
+.PHONY : 2.18
 
 # fast build rule for target.
-C___Primer/fast:
-	$(MAKE) -f CMakeFiles/C___Primer.dir/build.make CMakeFiles/C___Primer.dir/build
-.PHONY : C___Primer/fast
+2.18/fast:
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/build
+.PHONY : 2.18/fast
+
+2/2.18.o: 2/2.18.cpp.o
+
+.PHONY : 2/2.18.o
+
+# target to build an object file
+2/2.18.cpp.o:
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/2/2.18.cpp.o
+.PHONY : 2/2.18.cpp.o
+
+2/2.18.i: 2/2.18.cpp.i
+
+.PHONY : 2/2.18.i
+
+# target to preprocess a source file
+2/2.18.cpp.i:
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/2/2.18.cpp.i
+.PHONY : 2/2.18.cpp.i
+
+2/2.18.s: 2/2.18.cpp.s
+
+.PHONY : 2/2.18.s
+
+# target to generate assembly for a file
+2/2.18.cpp.s:
+	$(MAKE) -f CMakeFiles/2.18.dir/build.make CMakeFiles/2.18.dir/2/2.18.cpp.s
+.PHONY : 2/2.18.cpp.s
 
 2/2.8.o: 2/2.8.cpp.o
 
@@ -197,9 +237,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... 2.8"
 	@echo "... C___Primer"
+	@echo "... 2.8"
+	@echo "... 2.18"
+	@echo "... edit_cache"
+	@echo "... 2/2.18.o"
+	@echo "... 2/2.18.i"
+	@echo "... 2/2.18.s"
 	@echo "... 2/2.8.o"
 	@echo "... 2/2.8.i"
 	@echo "... 2/2.8.s"

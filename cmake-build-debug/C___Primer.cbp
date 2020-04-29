@@ -27,11 +27,47 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="C___Primer">
+				<Option output="/home/ldl/C++ Primer/cmake-build-debug/C___Primer" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ldl/C++ Primer/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 C___Primer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="C___Primer/fast">
+				<Option output="/home/ldl/C++ Primer/cmake-build-debug/C___Primer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ldl/C++ Primer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 C___Primer/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,8 +119,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="C___Primer">
-				<Option output="/home/ldl/C++ Primer/cmake-build-debug/C___Primer" prefix_auto="0" extension_auto="0"/>
+			<Target title="2.18">
+				<Option output="/home/ldl/C++ Primer/cmake-build-debug/2.18" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ldl/C++ Primer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -100,14 +136,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 C___Primer"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 2.18"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="C___Primer/fast">
-				<Option output="/home/ldl/C++ Primer/cmake-build-debug/C___Primer" prefix_auto="0" extension_auto="0"/>
+			<Target title="2.18/fast">
+				<Option output="/home/ldl/C++ Primer/cmake-build-debug/2.18" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ldl/C++ Primer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -123,13 +159,26 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 C___Primer/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 2.18/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ldl/C++ Primer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ldl/C++\ Primer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/ldl/C++ Primer/2/2.18.cpp">
+			<Option target="2.18"/>
+		</Unit>
 		<Unit filename="/home/ldl/C++ Primer/2/2.8.cpp">
 			<Option target="2.8"/>
 		</Unit>
